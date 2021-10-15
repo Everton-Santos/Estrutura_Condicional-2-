@@ -14,6 +14,7 @@ public class App {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
+		//Condição
 		/*
 		System.out.print("x: ");
 		int x = sc.nextInt();
@@ -25,10 +26,14 @@ public class App {
 		c.maiorQue(x, y);
 		*/
 		
+		
+		//DiaTardeNoite
+		/*
 		System.out.print("Que horas são: ");
 		int horasAtualRedondo = sc.nextInt();
 		
 		DiaTardeNoite dtn = new DiaTardeNoite();
 		dtn.Cumprimento(horasAtualRedondo);
+		*/
 	}
 }
