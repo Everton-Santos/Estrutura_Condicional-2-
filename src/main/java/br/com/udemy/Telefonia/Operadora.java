@@ -12,7 +12,7 @@ public class Operadora {
 		}
 		else {
 			int variavel = minutos - 100;
-			adicional = variavel * adicional;
+			adicional *= variavel;
 		}
 		return valor + adicional;
 	}
