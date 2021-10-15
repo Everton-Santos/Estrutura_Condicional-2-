@@ -4,6 +4,7 @@ public class Operadora {
 
 	private double valor = 50.00;
 	private double adicional = 2.00;
+	private double minutos = this.minutos;
 	
 	public double minutosGastos(int minutos) {
 		if(minutos <= 100) {
@@ -15,4 +16,7 @@ public class Operadora {
 		}
 		return valor + adicional;
 	}
+	
+	
+	
 }

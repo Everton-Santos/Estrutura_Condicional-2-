@@ -16,16 +16,28 @@ public class App {
 		
 		try {
 			
+			Usuario us = new Usuario();
+			
+			System.out.print("Nome: ");
+			String nomeSobrenome = sc.nextLine();
+			us.nome(nomeSobrenome);
+			
+			System.out.print("Idade: ");
+			int idade = sc.nextInt();
+			us.idade(idade);
+			
 			System.out.print("Quantidade de minutos gastos: ");
 			int minutos = sc.nextInt();
 			
+			System.out.println();
+			System.out.println(us.toString());
 			System.out.printf("Minutos gastos: %dmin \n", minutos);
 			System.out.printf("Valor a pagar: %.2f$ \n", op.minutosGastos(minutos));
 			
 		} catch (NullPointerException n) {
 			System.err.println("*** O valor não pode ser nulo! ***");
 		} catch (InputMismatchException i) {
-			System.err.println("*** Catacter inválido! ***");
+			System.err.println("*** Caracter inválido! ***");
 		} catch (MissingFormatArgumentException m) {
 			System.err.println("*** Formato de valor (%.2f ou %d) no código inválido ***");
 		} catch (Exception e) {
